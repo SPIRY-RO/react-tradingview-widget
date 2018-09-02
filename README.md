@@ -1,15 +1,15 @@
-# react-tradingview-widget
-React component for rendering the [TradingView Advanced Real-Time Chart Widget](https://www.tradingview.com/widget/advanced-chart/).
+# react-tradingview-widget-ta
+React component for rendering the [TradingView Advanced Real-Time Chart Technical Analysis Widget](https://www.tradingview.com/widget/advanced-chart/).
 
 ## Install
-`yarn add react-tradingview-widget`
+`yarn add react-tradingview-widget-ta`
 or
-`npm install --save react-tradingview-widget`
+`npm install --save react-tradingview-widget-ta`
 
 ## Usage
 ### Basic example
 ```javascript
-import TradingViewWidget from 'react-tradingview-widget';
+import TradingViewWidget from 'react-tradingview-widget-ta';
 
 const App = () => (
   <TradingViewWidget symbol="NASDAQ:AAPL" />

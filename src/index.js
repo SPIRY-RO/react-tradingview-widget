@@ -138,7 +138,7 @@ export default class TradingViewWidget extends PureComponent {
     script.id = SCRIPT_ID;
     script.type = 'text/javascript';
     script.async = true;
-    script.src = 'https://s3.tradingview.com/tv.js';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
     script.onload = onload;
     document.getElementsByTagName('head')[0].appendChild(script);
   };

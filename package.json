@@ -1,14 +1,14 @@
 {
-  "name": "react-tradingview-widget",
+  "name": "react-tradingview-widget-ta",
   "version": "1.2.5",
   "description": "React component for rendering the TradingView Advanced Real-Time Chart Widget",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rafaelklaessen/react-tradingview-widget.git"
+    "url": "https://github.com/SpiryMedia/react-tradingview-widget"
   },
-  "author": "Rafael Klaessen",
+  "author": "Spiry BTC",
   "bugs": {
-    "url": "https://github.com/rafaelklaessen/react-tradingview-widget/issues"
+    "url": "https://github.com/SpiryMedia/react-tradingview-widget/pulls"
   },
   "license": "MIT",
   "keywords": [
