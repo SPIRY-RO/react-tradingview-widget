@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TradingViewWidget, { IntervalTypes, Themes, BarStyles } from './index';
+import TradingViewWidgetTA from './index';
 
-describe('<TradingViewWidget />', () => {
+describe('<TradingViewWidgetTA />', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<TradingViewWidget symbol="NASDAQ:AAPL" />, div);
+    ReactDOM.render(<TradingViewWidgetTA symbol="NASDAQ:AAPL" />, div);
   });
 
   it('exports constants', () => {

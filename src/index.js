@@ -27,7 +27,7 @@ export const BarStyles = {
 const SCRIPT_ID = 'tradingview-widget-script';
 const CONTAINER_ID = 'tradingview-widget';
 
-export default class TradingViewWidget extends PureComponent {
+export default class TradingViewWidgetTA extends PureComponent {
   static propTypes = {
     widgetType: PropTypes.string,
     width: PropTypes.number,
@@ -89,19 +89,11 @@ export default class TradingViewWidget extends PureComponent {
   };
 
   static defaultProps = {
-    widgetType: 'widget',
     width: 980,
     height: 610,
     autosize: false,
     interval: IntervalTypes.D,
-    timezone: 'Etc/UTC',
-    theme: Themes.LIGHT,
-    style: BarStyles.CANDLES,
-    locale: 'en',
-    toolbar_bg: '#F1F3F6',
-    enable_publishing: false,
-    allow_symbol_change: true,
-    hideideas: true
+
   };
 
   containerId = `${CONTAINER_ID}-${Math.random()}`;
