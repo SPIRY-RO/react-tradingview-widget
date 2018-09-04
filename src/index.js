@@ -97,7 +97,7 @@ export default class TradingViewWidgetTA extends PureComponent {
 
   };
 
-  containerId = `${CONTAINER_ID}-${Math.random()}`;
+  containerId = `${CONTAINER_ID}__widget}`;
 
   componentDidMount = () => this.appendScript(this.initWidget);
 
@@ -176,7 +176,7 @@ export default class TradingViewWidgetTA extends PureComponent {
     }
 
     /* global TradingView */
-    new TradingViewTA[widgetType](config);
+    new TradingViewTA(config);
   };
 
   cleanWidget = () => {
