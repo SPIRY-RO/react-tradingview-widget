@@ -89,10 +89,11 @@ export default class TradingViewWidgetTA extends PureComponent {
   };
 
   static defaultProps = {
-    width: 980,
-    height: 610,
-    autosize: false,
-    interval: IntervalTypes.D,
+    
+    width: 100%,
+    height: 100%,
+    locale: en,
+    
 
   };
 
@@ -119,7 +120,7 @@ export default class TradingViewWidgetTA extends PureComponent {
 
     if (this.scriptExists()) {
       /* global TradingView */
-      if (typeof TradingView === 'undefined') {
+      if (typeof TradingViewTA === 'undefined') {
         this.updateOnloadListener(onload);
         return;
       }
@@ -152,7 +153,7 @@ export default class TradingViewWidgetTA extends PureComponent {
 
   initWidget = () => {
     /* global TradingView */
-    if (typeof TradingView === 'undefined') return;
+    if (typeof TradingViewTA === 'undefined') return;
 
     const { widgetType, ...widgetConfig } = this.props;
     const config = { ...widgetConfig, container_id: this.containerId };
@@ -175,7 +176,7 @@ export default class TradingViewWidgetTA extends PureComponent {
     }
 
     /* global TradingView */
-    new TradingView[widgetType](config);
+    new TradingViewTA[widgetType](config);
   };
 
   cleanWidget = () => {
